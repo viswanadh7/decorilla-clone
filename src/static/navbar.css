@@ -1,0 +1,43 @@
+.navbar{
+    top: 0;
+    background-color: transparent !important;
+    transition: 200ms;
+}
+.scrolled{
+    transition: 200ms;
+    background-color: white !important;
+    box-shadow: 0px 2px 8px black;
+}
+#navbar_logo{
+    font-size: 25px;
+    font-weight: bold;
+}
+.navbar a{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+.scrolled a{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+.navbar a:hover{
+    color: var(--mainColor);
+    text-decoration: underline;
+}
+
+.navbar li{
+    margin: 0 15px;
+}
+
+.navButton{
+    width: 150px;
+    height: 40px;
+    background-color: var(--mainColor);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}

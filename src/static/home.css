@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* :root{
+    --mainColor: #B19F6F;
+    --lightBlue:red;
+    --mainFont:'"Ethereal", "Baskerville Old Face", "Baskerville", serif';
+} */
+
+
+/* header img{
+    top: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.6);
+} */
+
+.header_section{
+    height: 100vh;
+    background-image: url('../assets/home_page_image.jpg');
+    background-size: cover;
+}
+
+
+.header_container{
+    margin: 15% auto;
+    text-align: center;
+}
+.header_container h1{
+    font-family: Playfair;
+    font-weight: lighter;
+    font-size: 60px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.video_section{
+    padding: 2%;
+    margin: 5% auto;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+.video_section div{
+    border-radius: 30px;
+    height: 500px;
+    width: 800px;
+    overflow-x: hidden;
+    margin: auto;
+}
+/* .video_section img{
+    height: 500px;
+    width: 800px;
+    border-radius: 15px;
+    margin-top: 2em;
+} */
+.icon_section{
+    margin-top: 3em;
+    height: 40vh;
+    text-align: center;
+}
+.icon_section h1{
+    font-family: var(--mainFont);
+    font-weight: 100;
+    font-size: 30px;
+}
+.icon_cards{
+    padding: 0px 5%;
+    display: flex;
+}
+.each_card_icon{
+    padding: 15px;
+    width: 20%;
+}
+.each_card_icon i{
+    color: var(--mainColor);
+    font-size: 35px;
+    margin-bottom: 1em;
+}
+.main_review{
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--lightBlue);
+}
+.main_review p{
+    font-size: 20px;
+    font-weight: 100;
+}
+.main_review h1{
+    font-family: var(--mainFont);
+}
+.main_review img{
+    height: 10em;
+    width: 15em;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 8em;
+}
+.review_slides{
+    height: 100vh;
+    width: 100vw;
+    padding: 5% 15%;
+}
+/* .slide_container{
+    border: 1px solid black;
+    height: fit-content;
+} */
+
+
+.slide_container h1{
+    font-weight: 450;
+    font-size: 18px;
+}
+.slide_container p{
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.each_slide i{
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: var(--mainColor);
+}
+
+.each_slide img{
+    height: 80vh;
+    border-radius: 25px;
+}
+.move_button{
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 2px 2px 10px black;
+}
+.move_button span{
+    color: black;
+    font-size: 20px;
+
+}
+
+.section_companies{
+    /* margin-top: 5%; */
+    background-color: var(--lightBlue);
+    height: 100vh;
+    width: 100vw;
+    padding: 1% 15%;
+    text-align: center;
+}
+.section_companies .heading{
+    font-family: Playfair;
+    font-weight: 1;
+    font-size: 40px;
+    color: black;
+}
+
+.happy_client{
+    height: 100vh;
+    background-image: url('../assets/review_image.jpg');
+    background-size: cover;
+    /* padding: 5%; */
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;    
+}
+.client_card{
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px black;
+    background-color: rgba(255, 255, 255, 0.762);
+    margin: 5% 5%;
+    font-size: 15px;
+    font-weight: 100;
+}
+.client_card img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+/* 580 */
+@media screen and (max-width:760px) {
+
+    .header_section{
+        background-image: url('../assets/slide_image2.jpg');
+    }
+    .header_container{
+        padding: 5%;
+    }
+    .video_section{
+        height: fit-content;
+        margin-top: 20%;
+    }
+    .video_section div{
+        height: 400px;
+        width: 350px;
+    }
+    .icon_section{
+        margin-top: 50px;
+    }
+    .icon_cards{
+        overflow-x: auto;
+    }
+    /* .icon_cards::-webkit-scrollbar{
+        width: 0;
+    } */
+    .each_card_icon{
+        margin-right: 15px;
+        padding: 20px;
+        min-width: 150px;
+        border: 2px solid var(--lightBlue);
+        border-radius: 8px;
+    }
+    .main_review{
+        text-align: center;
+        margin-top: 20%;
+        display: block;
+    }
+    .main_review img{
+        margin: 0 auto;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+    }
+    .review_slides img{
+        width: 100%;
+    }
+    .review_slides{
+        height: fit-content;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .each_slide_image{
+        height: 50vh;
+        width: 100px;
+    }
+    .slide_buttons_container{
+        display: none;
+    }
+    .slide_button_bg_image{
+        height: 70px;
+        width: 100px;
+        border: none;
+        margin: 20px 5px;
+        border-radius: 15px;
+        
+    }
+    .move_button{
+        display: none;
+    }
+    #slide_button1{
+        background-image: url('../assets/slide_image1.jpg');
+        background-size: cover;
+    }
+    #slide_button2{
+        background-image: url('../assets/slide_image2.jpg');
+        background-size: cover;
+    }
+    #slide_button3{
+        background-image: url('../assets/slide_image3.jpg');
+        background-size: cover;
+    }
+    .slide_data{
+        display: none;
+    }
+    .happy_client{
+        height: 60vh;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        display: flex;
+        justify-content: space-between;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    .client_card{
+        height: 300px;
+        min-width: 350px;
+        padding: 5%;
+        margin: auto 5%;
+        font-size: 0.9em;
+        font-weight: 100;
+    }
+    .each_slide img{
+        height: 60vh;
+        width: 90vw;
+    }
+    .main_button{
+        width: 10px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 30px;
+    }
+    .section_companies{
+        height: 500px;
+    }
+    .section_companies img{
+        height: 120px;
+    }
+}
+
+@media screen and (760px<width<980px) {
+    .main_review{
+        display: block;
+        text-align: center;
+    }
+    .main_review img{
+        margin: 0 auto;
+        height: 200px;
+        width: 200px;
+    }
+    .section_companies{
+        height: 500px;
+    }
+    .review_slides{
+        height: 700px;
+    }
+    .each_slide img{
+        height: 300px;
+    }
+    .happy_client{
+        height: fit-content;
+    }
+    .client_card{
+        margin-top: 8%;
+    }
+}
